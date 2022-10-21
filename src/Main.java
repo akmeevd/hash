@@ -3,6 +3,19 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        //Дз 3 задание 2
+        Set<Task> tasks = new HashSet<>();
+        Task task1 = new Task(2, 2);
+        Task task2 = new Task(2, 3);
+        Task task3 = new Task(2, 2);
+        Task task4 = new Task(2, 4);
+        Task task5 = new Task(3, 2);
+        task1.addTask(tasks);
+        task2.addTask(tasks);
+        task3.addTask(tasks);
+        task4.addTask(tasks);
+        task5.addTask(tasks);
+        System.out.println(tasks.toString());
         //Дз1 задание 1
         Set<Product> products = new HashSet<>();
         Product banana = new Product("банан", 100, 0.5);
@@ -25,7 +38,6 @@ public class Main {
         System.out.println(recipes.toString());
         dz2task2();
         dz3task1();
-        dz3task2();
         dz3task3();
         //Дз3 задание 4
         //HashSet, глупо наверное, но так как в Hashset не повторяются элементы по проход по все элементам пройдет быстрее.
@@ -91,9 +103,6 @@ public class Main {
         }
 
         tasks.addAll(tasks1);
-
-
-
     }
 
     public static void dz3task3() {
@@ -112,33 +121,7 @@ public class Main {
         System.out.println(passports.toString());
 
     }
-    public static void dz3task2() {
-        Set<String> tasks = new HashSet<>();
-        String task1 = "2 * 2";
-        String task2 = "2 * 3";
-        String task3 = "2 * 4";
-        String task4 = "2 * 5";
-        String task5 = "2 * 6";
-        String task6 = "2 * 7";
-        String task7 = "2 * 8";
-        String task8 = "2 * 9";
-        String task9 = "9 * 3";
-        String task10 = "8 * 4";
-        String task11 = "6 * 5";
-        String task12 = "7 * 9";
-        String task13 = "9 * 9";
-        String task14 = "8 * 9";
-        String task15 = "3 * 1";
-        String task16 = "3 * 2";
-        String task17 = "2 * 2";
-        addTask(tasks, task1);
-        addTask(tasks, task2);
-        addTask(tasks, task3);
-        addTask(tasks, task16);
-        addTask(tasks, task17);
 
-        System.out.println(Arrays.toString(tasks.toArray()));
-    }
 
     public static void dz3task1() {
         Set<Sponsor> sponsors = new HashSet<>();
